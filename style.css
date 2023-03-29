@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}  
+
+:root {
+    --royal-orange-light: #90EE90;
+    --royal-orange-dark: #98FB98;
+    --white:#fff;
+    --backgroud: #98FB98;
+}
+
+
+.logo {
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background: var(--backgroud);
+    font-family: 'Roboto', sans-serif;
+    z-index: 1000;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 34px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    letter-spacing: 3px;
+}
+
+.nav-link{
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    background: var(--royal-orange-dark);
+    padding: 3px;
+    border-radius: 6%;
+}
+ 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main {
+ background: white;
+ padding: 142px 20px 20px;
+ width: 100%;
+ display: flex;
+ text-align: justify;
+ justify-content:center;
+ flex-direction: row;
+ font-family:'Roboto', sans-serif;
+ text-align: start;
+}
+
+.main h1 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+    text-align:initial;
+
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+
+}
+.main div {
+ width: 50%;
+
+}
+
+strong {
+ color: black;
+}
+
+img {
+    transition: transform 0.5s ease;
+  }
+  
+img:hover {
+    transform: translateX(10px);
+  }
+  
+
+.capa-ebook {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /*margin: auto;
+    margin-bottom: 60px;
+    margin-top: 60px;*/
+    padding: 20px;
+    justify-content: space-around;
+    width: 40%;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(168, 157, 157);
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    padding: 20px;
+      
+}
+
+.capa-ebook img {
+    width: 18rem;
+    height: 26rem;
+
+}
+
+.btn-capa {
+    width: 18rem;
+    margin: 10px 450px;
+    background-color: red;
+    font-weight: 900;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-capa:hover {
+    background-color: #ac0f0f;
+}
+
+#container {
+    width: 100%;
+    padding:  10px 10px;
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+.card  {
+    width: 290px;
+    height: 300px;
+    border-radius: 3%;
+    margin: 30px;
+    margin-left: 40px;
+    gap: 20px;
+    
+    
+}
+
+#container p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px ;
+    font-weight: 700;
+}
+
+.ferramentas {
+    background: white;
+    padding: 142px 20px 20px;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content:center;
+    flex-direction: row;
+    font-family:'Roboto', sans-serif;
+    text-align: start;
+    margin-top: 30px;
+    padding-top: 10px;
+    border: 1px solid black;;
+   }
+   
+.ferramentas h3 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.ferramentas p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+    text-align:initial;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+
+}
+
+.ferramentas div {
+ width: 50%;
+}
+
+.kit-jardim {
+    width: 100%;
+    padding:  10px 10px;
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card-jardim  {
+    width: 290px;
+    height: 300px;
+    border: 0.5px solid black;
+    border-radius: 3%;
+    margin: 30px;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+.kit-jardim p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.garden {
+    background: white;
+    padding: 142px 20px 20px;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content:center;
+    flex-direction: row;
+    font-family:'Roboto', sans-serif;
+    text-align: start;
+    padding-top: 10px;
+   }
+   
+.garden h2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.garden p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+    text-align:initial;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+
+}
+
+.garden div {
+ width: 50%;
+}
+
+form {
+    width: 40%;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(168, 157, 157);
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    padding: 20px;
+}
+input, textarea {
+    min-width: 280px;
+    display:block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    margin-top: 20px ;
+    height: 40px;
+    padding-left: 40px;
+    
+}
+
+textarea {
+    height: 200px;
+    padding-top: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    height: 40px;
+    min-width: 280px;
+    border: none;
+    border-radius: 5px;
+    background: var(--royal-orange-light);
+    cursor: pointer ;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+.form-h2 {
+    text-align: center;
+}
+
+.form-obg {
+    width: 40%;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: #fff1ff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.form-obg h1, p {
+    margin: 10px;
+}
+
+#sobre{
+    background: white;
+    padding: 142px 20px 20px;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content:center;
+    flex-direction: row;
+    font-family:'Roboto', sans-serif;
+    text-align: start;
+    padding-top: 10px;
+   }
+#sobre h2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#sobre p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+    text-align:initial;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+
+}
+
+#sobre div {
+ width: 50%;
+}
+
+footer {
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#social-links {
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+    justify-content: center;
+    font-size: 24px;
+  } 
+  
+  #social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition:  background 0.2s;
+    border-radius: 50%;
+  }
+  
+  #social-links a:hover {
+    background: var(--royal-orange-light);
+  }
+
+  
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: black;
+    font-family: 'roboto', sans-serif;
+    transition:  background 0.2s;
+    border-radius: 5px;
+  }
+ 
+  
+@media (max-width:680px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 132px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: var(--backgroud);
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .card {
+        max-width: 100%;
+        max-height:80%;
+        margin: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #container  p {
+        text-align: center;
+    }
+
+
+
+    .form {
+        max-width: 100%;
+        max-height:80%;
+        margin: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+}
