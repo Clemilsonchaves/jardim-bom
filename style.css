@@ -180,7 +180,7 @@ img:hover {
     gap: 50px;
     margin-bottom: px;
     margin-top: 30px;
-    border: 1px solid black;
+    border: none;
 }
 
 .card  {
@@ -213,7 +213,7 @@ img:hover {
     text-align: start;
     margin-top: 30px;
     padding-top: 10px;
-    border: 1px solid black;;
+    border: none;
    }
    
 .ferramentas h3 {
