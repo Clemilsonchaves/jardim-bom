@@ -78,21 +78,31 @@ a {
 
 
 .main {
- background: white;
- padding: 142px 20px 20px;
- width: 100%;
- display: flex;
- text-align: justify;
- justify-content:center;
- flex-direction: row;
- font-family:'Roboto', sans-serif;
- text-align: start;
+    background: white;
+    padding: 142px 20px 20px;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content:center;
+    flex-direction: row;
+    font-family:'Roboto', sans-serif;
+    text-align: start;
+   }
+
+.main-div {
+    width: 80%;
+    margin: 0;
+
+
+
+
 }
 
 .main h1 {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+
 }
 
 .main p {
@@ -107,10 +117,6 @@ a {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 
-
-}
-.main div {
- width: 50%;
 
 }
 
@@ -237,7 +243,7 @@ img:hover {
 }
 
 .ferramentas div {
- width: 50%;
+ width: 60%;
 }
 
 .kit-jardim {
@@ -303,7 +309,7 @@ img:hover {
 }
 
 .garden div {
- width: 50%;
+ width: 60%;
 }
 
 form {
@@ -405,7 +411,7 @@ button:active {
 }
 
 #sobre div {
- width: 50%;
+ width: 60%;
 }
 
 footer {
@@ -512,6 +518,37 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    
 
+    .main {
+        max-width: 100%;
+        max-height: 80%;
+        margin: 16px;
+        margin-left: auto;
+        margin-right: auto;
 }
+
+    .ferramentas {
+        max-width: 100%;
+        max-height: 80%;
+        margin: 16px;
+        margin-left: auto;
+        margin-right: auto;
+}
+    .sobre {
+        max-width: 100%;
+        max-height: 80%;
+        margin: 16px;
+        margin-left: auto;
+        margin-right: auto;
+}
+    .garden {
+        max-width: 100%;
+        max-height: 80%;
+        margin: 16px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+}
+
