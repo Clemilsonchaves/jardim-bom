@@ -78,7 +78,10 @@ a {
 
 
 .main {
-    background: white;
+    background-image: url("./assets/background-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 142px 20px 20px;
     width: 100%;
     display: flex;
@@ -90,11 +93,15 @@ a {
    }
 
 .main-div {
-    width: 80%;
+    background-color: #fff;
+    opacity: 0.65;
+    width: 60%;
+    min-width: 320px;
     margin: 0;
-
-
-
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -110,14 +117,10 @@ a {
     font-weight: 300;
     line-height: 25px;
     margin-bottom: 20px;
-
+    color: rgb(9, 9, 9);
     text-align:initial;
-
-
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-
-
+    font-weight: bold;
 }
 
 strong {
@@ -132,15 +135,22 @@ img:hover {
     transform: translateX(10px);
   }
   
-
+.bg-ebook {
+    display: flex;
+    justify-content: center;
+    background: rgb(97, 98, 96);
+    width: 100%;
+    height: 700px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
 .capa-ebook {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /*margin: auto;
-    margin-bottom: 60px;
-    margin-top: 60px;*/
     padding: 20px;
     justify-content: space-around;
     width: 40%;
@@ -149,8 +159,8 @@ img:hover {
     background: rgb(168, 157, 157);
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    margin: 100px auto;
-    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
       
 }
 
@@ -174,9 +184,10 @@ img:hover {
 }
 
 #container {
+    background: url("./assets/bg-tijolo.jpg");
     width: 100%;
+    min-width: 320px;
     padding:  10px 10px;
-    background: white;
     font-family: 'Roboto', sans-serif;
     color: black;
     display:flex;
@@ -185,7 +196,7 @@ img:hover {
     flex-wrap: wrap;
     gap: 50px;
     margin-bottom: px;
-    margin-top: 30px;
+    margin-top: 0;
     border: none;
 }
 
@@ -208,7 +219,7 @@ img:hover {
 }
 
 .ferramentas {
-    background: white;
+    background: url("./assets/bg-grama.jpg");
     padding: 142px 20px 20px;
     width: 100%;
     display: flex;
@@ -217,7 +228,7 @@ img:hover {
     flex-direction: row;
     font-family:'Roboto', sans-serif;
     text-align: start;
-    margin-top: 30px;
+    margin-top: 0;
     padding-top: 10px;
     border: none;
    }
@@ -226,6 +237,7 @@ img:hover {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 40px;
+    min-width: 320px;
 }
 
 .ferramentas p {
@@ -233,23 +245,22 @@ img:hover {
     font-weight: 300;
     line-height: 25px;
     margin-bottom: 20px;
-
     text-align:initial;
-
-    font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-
-
 }
 
 .ferramentas div {
  width: 60%;
+ min-width: 320px;
+ margin: 0;
 }
 
 .kit-jardim {
     width: 100%;
+    min-width: 320px;
     padding:  10px 10px;
-    background: white;
+    background: url("./assets/bg-madeira.jpg");
     font-family: 'Roboto', sans-serif;
     color: black;
     display:flex;
@@ -276,41 +287,48 @@ img:hover {
 }
 
 .garden {
-    background: white;
+    background: url("./assets/bg-natureza.jpg");
+    background-size: 100% 100%;
     padding: 142px 20px 20px;
     width: 100%;
+    min-width: 320px;
     display: flex;
     text-align: justify;
     justify-content:center;
     flex-direction: row;
     font-family:'Roboto', sans-serif;
     text-align: start;
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.garden div {
+    background: #c1c1c1;
+    opacity: 0.7;
+    border-radius: 6px;
+    margin-top: 70px;
+    width: 60%;
+    margin: 0;
+    padding: 40px 20px;
    }
-   
+    
 .garden h2 {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    font-weight: 900;
+    color: black;
 }
 
 .garden p {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 900;
     line-height: 25px;
     margin-bottom: 20px;
-
     text-align:initial;
-
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-
-
 }
 
-.garden div {
- width: 60%;
-}
 
 form {
     width: 40%;
@@ -358,16 +376,19 @@ button:active {
     opacity: 0.6;
 }
 
+.form {
+    background-color: #556B2F;
+    padding: 30px 30px;
+}
 .form-h2 {
     text-align: center;
 }
 
-.form-obg {
+.form-obg  {
     width: 40%;
     min-width: 320px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background: #fff1ff;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     margin: 100px auto;
@@ -379,7 +400,7 @@ button:active {
 }
 
 #sobre{
-    background: white;
+    background: #F0E68C;
     padding: 142px 20px 20px;
     width: 100%;
     display: flex;
@@ -390,6 +411,12 @@ button:active {
     text-align: start;
     padding-top: 10px;
    }
+
+#sobre div {
+    width: 60%;
+    margin: 0;
+}
+
 #sobre h2 {
     text-align: center;
     padding-top: 40px;
@@ -410,10 +437,6 @@ button:active {
 
 }
 
-#sobre div {
- width: 60%;
-}
-
 footer {
     background: gray;
     display: flex;
@@ -422,7 +445,7 @@ footer {
     justify-content: center;
 }
 
-#social-links {
+#social {
     display: flex;
     gap: 16px;
     padding: 24px 0;
@@ -430,7 +453,7 @@ footer {
     font-size: 24px;
   } 
   
-  #social-links a {
+  #social a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,7 +462,7 @@ footer {
     border-radius: 50%;
   }
   
-  #social-links a:hover {
+  #social a:hover {
     background: var(--royal-orange-light);
   }
 
@@ -457,6 +480,12 @@ footer {
  
   
 @media (max-width:680px) {
+
+    header { 
+        margin-top: -16px;
+
+    }
+
     .hamburger {
         display: block;
     }

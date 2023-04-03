@@ -7,6 +7,8 @@ hamburger.addEventListener("click", () => {
 })
 
 
+
+
 const linkToTop = document.querySelector('#scroll-to-top');
 const sobre = document.querySelector('#sobre');
 
@@ -15,3 +17,19 @@ linkToTop.addEventListener('click', function(event) {
   sobre.scrollTop = 0;
   sobre.scrollIntoView({ behavior: 'smooth' });
 });
+
+
+const footerToTop = document.querySelector('#nav-link');
+const contato = document.querySelector('#footer');
+
+footerToTop.addEventListener('click', function(event) {
+  event.preventDefault();
+  footer.scrollTop = 0;
+  footer.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
+
+
+
