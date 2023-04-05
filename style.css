@@ -14,9 +14,11 @@
 
 
 .logo {
-    height: 60px;
+    height: 80px;
     border: none;
     border-radius: 50%;
+    margin-left: 50px;
+    padding-left: 20px auto;
 }
 
 header {
@@ -29,6 +31,7 @@ header {
 
 li {
     list-style: none;
+    margin-right: 60px;
 }
 
 a {
@@ -97,7 +100,7 @@ a {
     background-color: #fff;
     opacity: 0.65;
     width: 60%;
-    min-width: 320px;
+    min-width: 290px;
     margin: 0;
     padding: 20px 30px;
     border-radius: 5px;
@@ -141,6 +144,7 @@ img:hover {
     justify-content: center;
     background: rgb(97, 98, 96);
     width: 100%;
+    min-width: 290px;
     height: 700px;
     padding-left: 50px;
     padding-right: 50px;
@@ -155,7 +159,7 @@ img:hover {
     padding: 20px;
     justify-content: space-around;
     width: 40%;
-    min-width: 320px;
+    min-width: 290px;
     font-family: 'Roboto', sans-serif;
     background: rgb(168, 157, 157);
     border-radius: 5px;
@@ -166,35 +170,38 @@ img:hover {
 }
 
 .capa-ebook img {
-    width: 18rem;
+    width: 16rem;
     height: 26rem;
 
 }
 
 .btn-capa {
-    width: 18rem;
+    width: 16rem;
     margin: 10px 450px;
     background-color: red;
     font-weight: 900;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in;
 
 }
 
 .btn-capa:hover {
-    background-color: #ac0f0f;
+    background-color: #d01111;
 }
 
 #container {
-
-        background: url("./assets/bg-tijolo.jpg");
-        width: 100%;
-        min-width: 320px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
- }
+    background: url("./assets/bg-tijolo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 290px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+    border: none;
+}
 
  #container img {
     display: flex;
@@ -231,10 +238,8 @@ img:hover {
     margin: auto;
     margin-bottom: 20px;
     padding: 20px 30;
-
-
-
 }
+
 .ferramentas {
     background: url("./assets/bg-grama.jpg");
     padding: 142px 20px 20px;
@@ -263,47 +268,68 @@ img:hover {
     line-height: 25px;
     margin-bottom: 20px;
     text-align:initial;
-     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
 .ferramentas div {
  width: 60%;
- min-width: 320px;
+ min-width: 290px;
  margin: 0;
 }
 
 .kit-jardim {
-    width: 100%;
-    min-width: 320px;
-    padding:  10px 10px;
     background: url("./assets/bg-madeira.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 50px;
-}
+    width: 100%;
+    min-width: 290px;
+    height: 100%;
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 20px;
+ }
 
-.card-jardim  {
+.kit-jardim img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-bottom: 20px;
     width: 290px;
     height: 300px;
-    border: 0.5px solid black;
+    border: none;
     border-radius: 3%;
-    margin: 30px;
-    margin-left: 40px;
     gap: 20px;
+ }
+
+ .card-jardim {
+    width: 60%;
+    height: 40%;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    gap: 20;
 }
 
 .kit-jardim p {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+    font-family: 'roboto', sans-serif;
+    font-weight: 900;
+    background: #D2691E;
+    width: 290px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px 30;
 }
 
 .garden {
@@ -312,7 +338,7 @@ img:hover {
     background-repeat: no-repeat;
     padding: 142px 20px 20px;
     width: 100%;
-    min-width: 320px;
+    min-width: 290px;
     display: flex;
     text-align: justify;
     justify-content:center;
@@ -329,7 +355,7 @@ img:hover {
     border-radius: 6px;
     margin-top: 70px;
     width: 60%;
-    min-width: 320px;
+    min-width: 290px;
     margin: 0;
    }
     
@@ -352,17 +378,18 @@ img:hover {
 
 
 form {
-    width: 60%;
-    min-width: 320px;
+    width: 40%;
+    min-width: 290px;
     font-family: 'Roboto', sans-serif;
     background: rgb(168, 157, 157);
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     margin: 100px auto;
-    padding: 20px;
+    padding: 20px auto;
+    padding-top: 30px;
 }
 input, textarea {
-    min-width: 280px;
+    min-width: 260px;
     display:block;
     margin: 0 auto;
     border-radius: 5px;
@@ -382,7 +409,7 @@ button {
     display: block;
     margin: 20px auto;
     height: 40px;
-    min-width: 280px;
+    min-width: 260px;
     border: none;
     border-radius: 5px;
     background: var(--royal-orange-light);
@@ -398,8 +425,10 @@ button:active {
 }
 
 .form {
+    display: flex;
+    align-items: center;
     background-color: #9ACD32;
-    padding: 30px 30px;
+    padding: 30px auto;
 }
 .form-h2 {
     text-align: center;
@@ -407,13 +436,12 @@ button:active {
 
 .form-obg  {
     width: 40%;
-    min-width: 320px;
+    min-width: 290px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     margin: 100px auto;
-    padding: 20px;
 }
 
 .form-obg h1, p {
@@ -435,7 +463,7 @@ button:active {
 
 #sobre div {
     width: 60%;
-    min-width: 320px;
+    min-width: 290px;
     margin: 0;
 }
 
@@ -510,6 +538,7 @@ footer {
 
     .hamburger {
         display: block;
+        margin-right: 50px;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -531,7 +560,6 @@ footer {
         position: fixed;
         left: 100%;
         margin-top: 240px;
-        
         gap: 0;
         border-radius: 0 0 20px 20px;
         background-color: var(--backgroud);
@@ -575,16 +603,39 @@ footer {
         max-width: 100%;
         width: 100%;
         max-height:80%;
-        margin: 16px;
         margin-left: 16px;
         margin-right: 16px;
         margin-bottom: 16px;
+        margin-top: 20px;
     }
 
     #container  p {
         text-align: center;
     }
 
+ .kit-jardim {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 100%;
+        max-height: 80%;
+        margin-left: 100% auto;
+        margin-right: auto;
+    }
+
+    .card-jardim {
+        max-width: 100%;
+        width: 100%;
+        max-height:80%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+    }
+
+    .kit-jardim  p {
+        text-align: center;
+    }
 
 
     
@@ -601,18 +652,7 @@ footer {
         padding: 20px 20px;
 
     }
-    #sobre {
-        max-width: 100%;
-        max-height: 80%;
-        margin-left: 100% auto;
-        margin-right: auto;
-
-}   
-    #sobre div h2 p {
-        margin-left: 100% auto;
-        padding: 20px 20px;
-
-    }
+   
 
     .garden div h2 p {
     margin-left: 100% auto;
@@ -631,7 +671,18 @@ footer {
         margin-right: auto;
     }
 
-    
+    #sobre {
+        max-width: 100%;
+        max-height: 80%;
+        margin-left: 100% auto;
+        margin-right: auto;
+
+}   
+    #sobre div h2 p {
+        margin-left: 100% auto;
+        padding: 20px 20px;
+
+    }
 
 }
 
