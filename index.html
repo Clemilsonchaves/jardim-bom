@@ -9,6 +9,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@700&display=swap" rel="stylesheet">
         <title>Jardim Bom</title>
+        <script type="text/javascript">
+            function importHotmart(){ 
+                 var imported = document.createElement('script'); 
+                 imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                 document.head.appendChild(imported); 
+                var link = document.createElement('link'); 
+                link.rel = 'stylesheet'; 
+                link.type = 'text/css'; 
+                link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                document.head.appendChild(link);	} 
+             importHotmart(); 
+         </script> 
     </head>
     <body>
         <header>
@@ -88,9 +100,10 @@
 
         <section class="bg-ebook">
             <div class="capa-ebook">
-                <img src="./assets/capa-ebook.png" alt="capa ebook">
-
-                <button class="btn-capa" href="https://pay.hotmart.com/T81621468R" target="_blank">COMPRAR</button> 
+                <img class="img-ebook" src="./assets/capa-ebook.png" alt="capa ebook">
+                <button class="btn-capa"><a onclick="return false;" href="https://pay.hotmart.com/T81621468R?checkoutMode=2" 
+                       class="hotmart-fb hotmart__button-checkout">
+                <img class="btn-img" src='https://static.hotmart.com/img/btn-buy-green.png'></a> </button>
             </div>
         </section>
 
@@ -229,13 +242,14 @@
                  </div>
         </div>
 
-        <div class="bg-ebook">
+        <section class="bg-ebook">
             <div class="capa-ebook">
-                <img src="./assets/capa-ebook.png" alt="capa e-book">
-                
-                <button class="btn-capa" href="#" target="_blank">COMPRAR</button>
+                <img class="img-ebook" src="./assets/capa-ebook.png" alt="capa ebook">
+                <button class="btn-capa"><a onclick="return false;" href="https://pay.hotmart.com/T81621468R?checkoutMode=2" 
+                       class="hotmart-fb hotmart__button-checkout">
+                <img class="btn-img" src='https://static.hotmart.com/img/btn-buy-green.png'></a> </button>
             </div>
-        </div>
+        </section>
 
         <div class="form">
             <form action="https://formsubmit.co/jardimbom23@gmail.com" method="POST">

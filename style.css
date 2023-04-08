@@ -169,23 +169,28 @@ img:hover {
       
 }
 
-.capa-ebook img {
+.img-ebook {
     width: 16rem;
-    height: 26rem;
+    height: 27rem;
 
+}
+
+.btn-img {
+    width: 100%;
+    border: #cccc 1px solid;
+    margin-top: 10px;
+    border-radius: 3px;
 }
 
 .btn-capa {
     width: 16rem;
-    margin: 10px 450px;
-    background-color: red;
+    margin: 10px 450px; 
+    background-color: none;
     font-weight: 900;
     transition: background-color 0.3s ease-in;
-
 }
-
-.btn-capa:hover {
-    background-color: #d01111;
+.btn-capa a {
+    margin-bottom: 10px;
 }
 
 #container {
@@ -417,6 +422,9 @@ button {
     display: block;
     margin: 20px auto;
     height: 40px;
+    font-weight: 900;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
     min-width: 250px;
     border: none;
     border-radius: 5px;
