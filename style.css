@@ -544,7 +544,9 @@ footer {
     color: #25D366;
   }
   #social a:hover {
-    background: var(--royal-orange-light);
+    background: #696969;
+
+
   }
 
   
@@ -664,7 +666,7 @@ footer a {
         margin-right: 10px;
         padding: 20px 10px;
     }
-    
+
     .capa-ebook {
         width: 100%;
     }
