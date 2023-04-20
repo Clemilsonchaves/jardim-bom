@@ -198,7 +198,7 @@ img:hover {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
-    min-width: 260px;
+    max-width:100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -208,27 +208,51 @@ img:hover {
     border: none;
 }
 
- #container img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 260px;
-    height: 300px;
-    border: 1px solid #696969;
-    border-radius: 3%;
-    gap: 20px;
- }
-
- .card {
-    width: 60%;
-    height: 40%;
-    text-align: center;
+ 
+ .card-suspenso {
+    background-image: url(./assets/jardim-suspenso.jpg);
+    background-size: 100% 100%;
+    min-width: 30%;
+    width: 30%;
+    height:  auto;
     line-height: 100px;
-    margin-top: 40px;
-    gap: 20;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 6px;
+    border: 1px solid #696969;
 }
+
+.card-vertical {
+    background-image: url(./assets/jardim-vertical.jpg);
+    background-size: 100% 100%;
+    min-width: 30%;
+    width: auto;
+    height: auto;
+    line-height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 6px;
+    border: 1px solid #696969;
+}
+
+.card-quintal {
+    background-image: url(./assets/quintal.jpg);
+    background-size:  100% 100%;
+    min-width: 30%;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 6px;
+    border: 1px solid #696969;
+}
+
 
 #container p {
     display: flex;
@@ -237,12 +261,15 @@ img:hover {
     border-radius: 6px;
     border: 1px solid #696969;
     font-family: 'roboto', sans-serif;
+    font-size: 1em;
     font-weight: 900;
     background: #D2691E;
-    width: 260px;
+    width: 220px;
     height: 40px;
-    margin: auto;
+    margin-top: 350px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 30;
 }
 
@@ -308,27 +335,54 @@ img:hover {
     border: none;
  }
 
-.kit-jardim img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 260px;
-    height: 300px;
-    border: 1px solid #696969;
-    border-radius: 3%;
-    gap: 20px;
- }
 
- .card-jardim {
-    width: 60%;
-    height: 40%;
+
+ .card-tesoura {
+    background-image: url(./assets/Tesoura_podar.jpg);
+    background-size: 100% 100%;
+    min-width: 30%;
+    width: auto;
+    height: auto;
     text-align: center;
     line-height: 100px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    gap: 20;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 6px;
+    border: 1px solid #696969;
+}
+
+.card-kit {
+    background-image: url(./assets/kit_jardim.jpg);
+    background-size: 100% 100%;
+    min-width: 30%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 6px;
+    border: 1px solid #696969;
+}
+
+.card-luva {
+    background-image: url(./assets/luva_jardim.jpg);
+    background-size: 100% 100%;
+    min-width: 30%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 6px;
+    border: 1px solid #696969;
 }
 
 .kit-jardim p {
@@ -339,12 +393,15 @@ img:hover {
     border: 1px solid #696969;
     font-family: 'roboto', sans-serif;
     font-weight: 900;
+    font-size: 1em;
     background: #D2691E;
-    width: 260px;
+    width: 220px;
     height: 40px;
-    margin: auto;
+    margin-top: 350px;
     margin-bottom: 20px;
-    padding: 20px 30;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30;  
 }
 
 .garden {
@@ -555,11 +612,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
-    padding: 10px;
+    padding: 30px;
+    border-top: 1px solid black;
     color: black;
     font-family: 'roboto', sans-serif;
     transition:  background 0.2s;
-    border-radius: 5px;
+    border-radius: none;
   }
 
   #footer {
@@ -681,19 +739,64 @@ footer a {
         margin-right: auto;
     }
 
-    .card {
-        max-width: 100%;
-        width: 100%;
-        max-height:80%;
+    .card-suspenso {
+        background-size: cover;
+        background-position: center;
+        min-width: 90%;
+        width: 80%;
         margin-left: 16px;
         margin-right: 16px;
         margin-bottom: 16px;
         margin-top: 20px;
+        border: 1px solid #696969;
     }
 
-    #container  p {
-        text-align: center;
+    .card-suspenso p {
+        max-width: 30%;
+        width: 30%;
+        min-width: 60%;
+        font-size: 0%;
     }
+
+    .card-vertical {
+        background-size: cover;
+        background-position: center;
+        min-width: 90%;
+        width: 80%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+        border: 1px solid #696969;
+    }
+
+    .card-vertical p {
+        max-width: 30%;
+        width: 30%;
+        min-width: 60%;
+        font-size: 0.6em;
+    }
+
+    .card-quintal {
+        background-size: cover;
+        background-position: center;
+        min-width: 90%;
+        width: 80%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+        border: 1px solid #696969;
+    }
+
+    .card-quintal p {
+        max-width: 30%;
+        width: 30%;
+        min-width: 60%;
+        font-size: 0.6em;
+    }
+
+    
 
  .kit-jardim {
         background-size: cover;
@@ -704,20 +807,68 @@ footer a {
         margin-right: auto;
     }
 
-    .card-jardim {
-        max-width: 100%;
-        width: 100%;
-        max-height:80%;
+    .card-tesoura {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 90%;
+        width: 80%;
         margin-left: 16px;
         margin-right: 16px;
         margin-bottom: 16px;
         margin-top: 20px;
+        border: 1px solid #696969;
     }
 
-    .kit-jardim  p {
-        text-align: center;
+    .card-tesoura p {
+        max-width: 30%;
+        width: 30%;
+        min-width: 60%;
+        font-size: 1em;
     }
-    
+
+    .card-kit {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 90%;
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+        border: 1px solid #696969;
+    }
+
+    .card-kit p {
+        max-width: 30%;
+        width: 30%;
+        min-width: 60%;
+        font-size: 1em;
+        
+    }
+
+    .card-luva {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 90%;
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+        border: 1px solid #696969;
+    }
+
+    .card-luva p { 
+        max-width: 30%;
+        width: 30%;
+        min-width: 60%;
+        font-size: 1em;
+
+    }
+
     .ferramentas  {
         background-size: cover;
         max-width: 100%;
