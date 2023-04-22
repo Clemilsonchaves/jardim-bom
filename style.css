@@ -90,9 +90,9 @@ a {
     width: 100%;
     display: flex;
     text-align: justify;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
-    font-family:'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
     text-align: start;
    }
 
